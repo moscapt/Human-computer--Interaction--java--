@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="779.0" style="-fx-background:lightyellow" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="airmadeira.FXMLDocumentController">
+  <children>
+    <Pane id="botaoVoltar" onMouseClicked="#vaiCamarasExteriores" prefHeight="493.0" prefWidth="779.0" style="-fx-cursor:hand" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ToolBar layoutX="0.0" layoutY="0.0" minHeight="31.0" onMouseClicked="#vaiCamarasExteriores" prefHeight="36.0" prefWidth="779.0" style="-fx-cursor:hand">
+          <items>
+            <Label text="Câmara 1 Vista Dianteira">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+          </items>
+        </ToolBar>
+        <ImageView id="minimizar.png" fitHeight="36.0" fitWidth="38.0" layoutX="738.0" layoutY="1.0" onMouseClicked="#vaiCamarasExteriores" style="-fx-cursor:hand">
+          <image>
+            <Image url="@../assets/minimizar.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <ImageView id="vista dianteira do aviao.png" fitHeight="457.0" fitWidth="779.0" layoutX="0.0" layoutY="36.0" onMouseClicked="#vaiCamarasExteriores" style="-fx-cursor:hand">
+          <image>
+            <Image url="@../assets/vista%20dianteira%20do%20aviao.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

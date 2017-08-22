@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="779.0" style="-fx-background:sandybrown" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="airmadeira.FXMLDocumentController">
+  <children>
+    <ImageView id="fundo_selectlang.png" layoutX="-1.0" layoutY="0.0">
+      <image>
+        <Image url="@../assets/fundo_selectlang.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="confirmarLingua.png" fitHeight="207.0" fitWidth="250.0" layoutX="271.0" layoutY="143.0">
+      <image>
+        <Image url="@../assets/confirmarLingua.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Pane layoutX="306.0" layoutY="278.0" onMouseClicked="#selectedLangPT" prefHeight="71.0" prefWidth="73.0" style="-fx-cursor:hand" />
+    <Pane layoutX="408.0" layoutY="278.0" onMouseClicked="#voltarLingua" prefHeight="65.0" prefWidth="79.0" style="-fx-cursor:hand" />
+  </children>
+</AnchorPane>

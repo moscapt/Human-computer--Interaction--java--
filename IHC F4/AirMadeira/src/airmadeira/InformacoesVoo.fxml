@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="779.0" style="-fx-background:lightyellow" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="airmadeira.FXMLDocumentController">
+  <children>
+    <ImageView id="globofinal.png" fitHeight="281.0" fitWidth="281.0" layoutX="37.0" layoutY="174.0">
+      <image>
+        <Image url="@../assets/globofinal.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TitledPane animated="false" layoutX="412.0" layoutY="174.0" prefHeight="281.0" prefWidth="281.0" text="Detalhes da Viagem">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <AnchorPane layoutX="-3.0" layoutY="-8.0" prefHeight="220.0" prefWidth="228.0">
+              <children>
+                <Label layoutX="14.0" layoutY="22.0" text="Local de Partida:">
+                  <font>
+                    <Font name="System Italic" size="12.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label font="$x1" layoutX="14.0" layoutY="38.0" text="Local de Destino:" />
+                <Label font="$x1" layoutX="14.0" layoutY="54.0" text="Hora de Partida:" />
+                <Label font="$x1" layoutX="14.0" layoutY="70.0" text="Hora de Chegada:" />
+                <Label font="$x1" layoutX="14.0" layoutY="86.0" text="Distância Total:" />
+                <Label font="$x1" layoutX="14.0" layoutY="102.0" text="Tempo Total:" />
+                <Label font="$x1" layoutX="14.0" layoutY="118.0" text="Distancia Percorrida:" />
+                <Label font="$x1" layoutX="14.0" layoutY="134.0" text="Temperatura atual do destino:" />
+                <Label layoutX="14.0" layoutY="150.0" text="" />
+                <Label layoutX="14.0" layoutY="166.0" text="Tempo restante atual:">
+                  <textFill>
+                    <Color blue="0.000" green="0.000" red="0.800" fx:id="x2" />
+                  </textFill>
+                </Label>
+                <Label layoutX="14.0" layoutY="182.0" text="Hora de chegada prevista:" textFill="$x2" />
+                <Label layoutX="122.0" layoutY="22.0" text="Portugal (Lisboa)" />
+                <Label layoutX="122.0" layoutY="38.0" text="Brasil (Brasilia)" />
+                <Label layoutX="123.0" layoutY="54.0" text="07h 30m" />
+                <Label layoutX="124.0" layoutY="70.0" text="16h 50m" />
+                <Label layoutX="122.0" layoutY="87.0" text="7487 km" />
+                <Label layoutX="123.0" layoutY="102.0" text="09h 20m" />
+                <Label layoutX="125.0" layoutY="119.0" text="2143 km" />
+                <Label layoutX="171.0" layoutY="135.0" text="30 ºC" />
+                <Label layoutX="134.0" layoutY="166.0" text="6h 25m" />
+                <Label layoutX="154.0" layoutY="183.0" text="16h 58m" />
+              </children>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="botaoMenuPrincipal" layoutX="82.0" layoutY="24.0" onMouseClicked="#voltarMenuPrincipal" style="-fx-cursor:hand" text="Menu Principal" underline="true">
+      <font>
+        <Font name="System Bold" size="23.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label fx:id="botaoOpcoesBordo" font="$x3" layoutX="265.0" layoutY="24.0" onMouseClicked="#selectedOpcoesBordo" style="-fx-cursor:hand" text="Opções de Bordo" underline="true" />
+    <Label font="$x3" layoutX="457.0" layoutY="24.0" text="&gt;Informações de Voo" />
+    <Label layoutX="514.0" layoutY="72.0" text="17:32">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <ImageView id="help.png" fitHeight="50.0" fitWidth="65.0" layoutX="685.0" layoutY="58.0">
+      <image>
+        <Image url="@../assets/help.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="451.0" layoutY="101.0" prefHeight="22.0" text="Quarta-Feira, 27-02-15">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label font="$x3" layoutX="248.0" layoutY="24.0" text="&gt;" />
+    <Pane layoutX="14.0" layoutY="20.0" onMouseClicked="#selectedOpcoesBordo" prefHeight="50.0" prefWidth="65.0" style="-fx-cursor:hand">
+      <children>
+        <ImageView id="SETA FINAL.png" fitHeight="50.0" fitWidth="65.0" layoutX="0.0" layoutY="0.0" onMouseClicked="#selectedOpcoesBordo" style="-fx-cursor:hand">
+          <image>
+            <Image url="@../assets/SETA%20FINAL.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
